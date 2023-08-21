@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import br.com.tech4me.carros.model.Carros;
 
-@FeignClient
-public interface CarrosClient {
+@FeignClient("carros")
+public interface CarClient {
     @RequestMapping(method = RequestMethod.GET, value = "/carros/{id}")
     Carros obterCarros(@PathVariable String id);
+    
 }

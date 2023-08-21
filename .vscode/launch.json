@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConcessionariaApplication",
+            "request": "launch",
+            "mainClass": "br.com.tech4me.concessionaria.ConcessionariaApplication",
+            "projectName": "concessionaria"
+        },
+        {
+            "type": "java",
             "name": "GatewayApplication",
             "request": "launch",
             "mainClass": "br.com.tech4me.gateway.GatewayApplication",
