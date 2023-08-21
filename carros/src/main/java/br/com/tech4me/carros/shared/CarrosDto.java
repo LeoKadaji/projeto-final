@@ -1,5 +1,7 @@
 package br.com.tech4me.carros.shared;
 
-public record CarrosDto(String nome, String marcaCarro, String ano) {
+import br.com.tech4me.carros.model.Carros;
+
+public record CarrosDto(String nome, String marcaCarro, String ano, Carros carro) {
     
 }

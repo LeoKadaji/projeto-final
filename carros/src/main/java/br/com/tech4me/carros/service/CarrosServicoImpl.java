@@ -44,7 +44,7 @@ public class CarrosServicoImpl implements CarrosServico {
 
         if(carros.isPresent()){
             Carros carro = carrosClient.obterCarros(carros.get().getId());
-            CarrosDto dtocarros = new CarrosDto(carros.get().getNome(), carros.get().getMarcaCarro(), carros.get().getAno());
+            CarrosDto dtocarros = new CarrosDto(carros.get().getNome(), carros.get().getMarcaCarro(), carros.get().getAno(), carro);
             return Optional.of(dtocarros);
         } else{
             return Optional.empty();
@@ -55,7 +55,7 @@ public class CarrosServicoImpl implements CarrosServico {
         Optional<Carros> carros = repositorio.findById(id);
 
         if(carros.isPresent()){
-            CarrosDto dtocarros = new CarrosDto(carros.get().getNome(), carros.get().getMarcaCarro(), carros.get().getAno());
+            CarrosDto dtocarros = new CarrosDto(carros.get().getNome(), carros.get().getMarcaCarro(), carros.get().getAno(), null);
             return Optional.of(dtocarros);
         } else{
             return Optional.empty();
