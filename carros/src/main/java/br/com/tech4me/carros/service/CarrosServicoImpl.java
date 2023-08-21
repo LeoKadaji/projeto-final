@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import br.com.tech4me.carros.httpclient.CarrosClient;
 import br.com.tech4me.carros.model.Carros;
@@ -12,6 +13,7 @@ import br.com.tech4me.carros.shared.CarrosCompletoDto;
 import br.com.tech4me.carros.shared.CarrosDto;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
+@Service
 public class CarrosServicoImpl implements CarrosServico {
 
     @Autowired

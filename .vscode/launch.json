@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GatewayApplication",
+            "request": "launch",
+            "mainClass": "br.com.tech4me.gateway.GatewayApplication",
+            "projectName": "gateway"
+        },
+        {
+            "type": "java",
+            "name": "EurekaApplication",
+            "request": "launch",
+            "mainClass": "br.com.tech4me.eureka.EurekaApplication",
+            "projectName": "eureka"
+        },
+        {
+            "type": "java",
+            "name": "ConcessionariaApplication",
+            "request": "launch",
+            "mainClass": "br.com.tech4me.concessionaria.ConcessionariaApplication",
+            "projectName": "tech4concessio"
+        },
+        {
+            "type": "java",
+            "name": "ConfigserverApplication",
+            "request": "launch",
+            "mainClass": "br.com.tech4me.configserver.ConfigserverApplication",
+            "projectName": "configserver"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CarrosApplication<carros>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.tech4me.carros.CarrosApplication",
+            "projectName": "carros",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

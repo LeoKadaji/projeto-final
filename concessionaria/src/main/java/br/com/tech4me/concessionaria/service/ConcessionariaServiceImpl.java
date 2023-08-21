@@ -4,12 +4,14 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import br.com.tech4me.concessionaria.model.Concessionaria;
 import br.com.tech4me.concessionaria.repository.ConcessionariaRepository;
 import br.com.tech4me.concessionaria.shared.ConcessionariaCompletoDto;
 import br.com.tech4me.concessionaria.shared.ConcessionariaDto;
 
+@Service
 public class ConcessionariaServiceImpl implements ConcessionariaService {
 
     @Autowired
